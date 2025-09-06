@@ -28,13 +28,13 @@ public class Main {
                 case "1":
                     System.out.println("\n Registrar Mascota");
                     System.out.println("************************");
-                    controlMascota.registraMascota(mascotas);
+                    controlMascota.registraMascota(mascotas,scan);
                     break;
 
                 case "2":
                     System.out.println("\n Registrar Servicios Generales ");
                     System.out.println("************************");
-                    controlServicio.RegistrarServicio(servicios);
+                    controlServicio.RegistrarServicio(servicios,scan);
                     break;
                 case "3":
                     System.out.println("\n Registrar Servicio de Mascota ");
@@ -54,6 +54,7 @@ public class Main {
 
             }
         }
+        scan.close();
     }
 
 }

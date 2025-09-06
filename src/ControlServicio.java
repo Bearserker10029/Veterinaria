@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ControlServicio {
-    public void RegistrarServicio(ArrayList<Servicio> servicios) {
-        Scanner sc = new Scanner(System.in);
+    public void RegistrarServicio(ArrayList<Servicio> servicios, Scanner sc) {
+
         Servicio servicio = new Servicio();
         System.out.println("Ingrese tipo de servicio: ");
         servicio.setTipo(sc.nextLine());
@@ -13,5 +13,7 @@ public class ControlServicio {
         System.out.println("Ingrese costo Base (PEN): ");
         servicio.setCosto_Base(sc.nextInt());
         sc.nextLine();
+        servicios.add(servicio);
+
     }
 }

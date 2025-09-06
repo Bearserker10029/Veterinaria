@@ -4,10 +4,9 @@ import java.util.Scanner;
 public class ControlMascota {
 
 
-    public void registraMascota(ArrayList<Mascota> mascotas) {
-        Scanner sc = new Scanner(System.in);
-        Mascota mascota = new Mascota();
+    public void registraMascota(ArrayList<Mascota> mascotas, Scanner sc) {
 
+        Mascota mascota = new Mascota();
         System.out.println("Ingrese el nombre del mascota: ");
         mascota.setNombre(sc.nextLine());
         System.out.println("Ingrese Raza: ");
@@ -18,7 +17,7 @@ public class ControlMascota {
         System.out.println("Ingrese Genero: ");
         mascota.setGenero(sc.nextLine());
         System.out.println("Ingrese Peso: ");
-        mascota.setPeso(sc.nextInt()) ;
+        mascota.setPeso(sc.nextInt());
         sc.nextLine();
         System.out.println("Ingrese tamano al mascota: ");
         mascota.setTamano(sc.nextLine());
@@ -27,5 +26,6 @@ public class ControlMascota {
         System.out.println("Ingrese Correo: ");
         mascota.setCorreo(sc.nextLine());
         mascotas.add(mascota);
+
     }
 }
