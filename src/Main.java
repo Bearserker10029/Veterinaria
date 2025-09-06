@@ -43,6 +43,7 @@ public class Main {
                 case "4":
                     System.out.println("\n Total de mascotas en la veterinaria  ");
                     System.out.println("************************");
+                    System.out.println("Total de mascotas registradas: " + mascotas.size());
                     break;
                 case "5":
                     estado = false;

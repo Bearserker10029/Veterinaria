@@ -26,5 +26,6 @@ public class ControlMascota {
         mascota.setNombre_Dueno(sc.nextLine());
         System.out.println("Ingrese Correo: ");
         mascota.setCorreo(sc.nextLine());
+        mascotas.add(mascota);
     }
 }
