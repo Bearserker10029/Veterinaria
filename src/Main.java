@@ -30,7 +30,6 @@ public class Main {
                     System.out.println("************************");
                     controlMascota.registraMascota(mascotas,scan);
                     break;
-
                 case "2":
                     System.out.println("\n Registrar Servicios Generales ");
                     System.out.println("************************");

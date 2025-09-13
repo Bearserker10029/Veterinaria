@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Mascota {
 
     private String nombre;
